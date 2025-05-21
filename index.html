@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>LED Control</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://www.gstatic.com/firebasejs/4.6.2/firebase.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="cyber-panel">
+      <h1>LED 제어 패널</h1>
+      <img id="img" src="off.png" width=40%>
+      <div class="button-container">
+        <button type="button" onclick="ledOn()" class="cyber-button btn-on">LED ON</button>
+        <button type="button" onclick="ledOff()" class="cyber-button btn-off">LED OFF</button>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --pink-primary: #ffb7c5;
+  --pink-secondary: #ffd1dc;
+  --pink-dark: #ff97ab;
+  --bg-color: #fff5f7;
+}
+
+body {
+  font-family: 'Arial', sans-serif;
+  background: var(--bg-color);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+}
+
+.cyber-panel {
+  background: white;
+  border: 2px solid var(--pink-primary);
+  border-radius: 25px;
+  padding: 2rem;
+  box-shadow: 0 5px 15px rgba(255, 183, 197, 0.3);
+  text-align: center;
+}
+
+h1 {
+  color: var(--pink-dark);
+  font-size: 2rem;
+  margin-bottom: 2rem;
+  font-weight: bold;
+}
+
+.button-container {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.cyber-button {
+  padding: 0.8rem 1.5rem;
+  border: none;
+  font-size: 1rem;
+  font-weight: bold;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.cyber-button:hover {
+  transform: translateY(-3px);
+}
+
+.btn-on {
+  background: var(--pink-primary);
+  color: white;
+}
+
+.btn-off {
+  background: var(--pink-secondary);
+  color: var(--pink-dark);
+}
+
+.led-status {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  margin: 0 auto;
+  background: #eee;
+  transition: all 0.3s ease;
+}
+
+.led-status.active {
+  background: var(--pink-primary);
+  box-shadow: 0 0 10px var(--pink-primary);
+}
